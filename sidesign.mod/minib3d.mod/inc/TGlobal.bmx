@@ -1,4 +1,4 @@
-Type TGlobal
+Type TminiB3dGlobal
 
 	Global width:Int,height:Int,mode:Int,depth:Int,rate:Int
 	Global ambient_red#=0.5,ambient_green#=0.5,ambient_blue#=0.5
