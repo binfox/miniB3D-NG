@@ -1559,7 +1559,7 @@ Type TMesh Extends TEntity
 	
 			Local vbo:Int=False
 			If surf.no_tris>=VBO_MIN_TRIS
-				If TGlobal.vbo_enabled Then vbo=True
+				If TminiB3dGlobal.vbo_enabled Then vbo=True
 			Else
 				' if surf no longer has required no of tris then free vbo
 				If surf.vbo_id[0]<>0 
@@ -1658,9 +1658,9 @@ Type TMesh Extends TEntity
 				ambient_green#=1.0
 				ambient_blue# =1.0
 			Else
-				ambient_red#  =TGlobal.ambient_red#
-				ambient_green#=TGlobal.ambient_green#
-				ambient_blue# =TGlobal.ambient_blue#
+				ambient_red#  =TminiB3dGlobal.ambient_red#
+				ambient_green#=TminiB3dGlobal.ambient_green#
+				ambient_blue# =TminiB3dGlobal.ambient_blue#
 			EndIf
 
 			' fx flag 2 - vertex colors ***todo*** disable all lights?
