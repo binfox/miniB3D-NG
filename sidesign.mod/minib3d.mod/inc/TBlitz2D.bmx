@@ -57,7 +57,7 @@ Type TBlitz2D
 		glMatrixMode GL_COLOR
 		glPushMatrix 
 		
-		TGlobal.EnableStates()
+		TminiB3dGlobal.EnableStates()
 		glDisable GL_TEXTURE_2D
 		
 		glLightModeli(GL_LIGHT_MODEL_COLOR_CONTROL,GL_SEPARATE_SPECULAR_COLOR)
