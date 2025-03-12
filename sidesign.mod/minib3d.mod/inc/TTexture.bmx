@@ -502,7 +502,7 @@ EndRem
 			Local x:Int=0,y:Int=0
 	
 			glBindtexture GL_TEXTURE_2D,gltex[frame]
-			glCopyTexImage2D(GL_TEXTURE_2D,mipmap_no,GL_RGBA8,x,TGlobal.height-y-height,width,height,0)
+			glCopyTexImage2D(GL_TEXTURE_2D,mipmap_no,GL_RGBA8,x,TminiB3dGlobal.height-y-height,width,height,0)
 			
 		Else ' cubemap texture
 
@@ -510,12 +510,12 @@ EndRem
 	
 			glBindtexture GL_TEXTURE_CUBE_MAP_EXT,gltex[0]
 			Select cube_face
-				Case 0 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_NEGATIVE_X,mipmap_no,GL_RGBA8,x,TGlobal.height-y-height,width,height,0)
-				Case 1 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_Z,mipmap_no,GL_RGBA8,x,TGlobal.height-y-height,width,height,0)
-				Case 2 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X,mipmap_no,GL_RGBA8,x,TGlobal.height-y-height,width,height,0)
-				Case 3 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_NEGATIVE_Z,mipmap_no,GL_RGBA8,x,TGlobal.height-y-height,width,height,0)
-				Case 4 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_NEGATIVE_Y,mipmap_no,GL_RGBA8,x,TGlobal.height-y-height,width,height,0)
-				Case 5 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_Y,mipmap_no,GL_RGBA8,x,TGlobal.height-y-height,width,height,0)
+				Case 0 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_NEGATIVE_X,mipmap_no,GL_RGBA8,x,TminiB3dGlobal.height-y-height,width,height,0)
+				Case 1 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_Z,mipmap_no,GL_RGBA8,x,TminiB3dGlobal.height-y-height,width,height,0)
+				Case 2 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X,mipmap_no,GL_RGBA8,x,TminiB3dGlobal.height-y-height,width,height,0)
+				Case 3 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_NEGATIVE_Z,mipmap_no,GL_RGBA8,x,TminiB3dGlobal.height-y-height,width,height,0)
+				Case 4 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_NEGATIVE_Y,mipmap_no,GL_RGBA8,x,TminiB3dGlobal.height-y-height,width,height,0)
+				Case 5 glCopyTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_Y,mipmap_no,GL_RGBA8,x,TminiB3dGlobal.height-y-height,width,height,0)
 			End Select
 		
 		EndIf
