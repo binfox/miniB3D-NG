@@ -15,7 +15,7 @@ Type TPick
 
 	Function CameraPick:TEntity(cam:TCamera,vx:Float,vy:Float)
 
-		vy:Float=TGlobal.height-vy
+		vy:Float=TminiB3DGlobal.height-vy
 
 		Local px:Double
 		Local py:Double
