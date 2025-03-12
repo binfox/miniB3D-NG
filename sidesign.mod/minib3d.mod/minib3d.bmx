@@ -1,3 +1,4 @@
+Strict
 Rem
 bbdoc: minib3d
 End Rem
@@ -7,7 +8,7 @@ ModuleInfo "Main Author: Simon Harrison (simonh@blitzbasic.com). Includes routin
 ModuleInfo "License: You are free to use this code as you please"
 ModuleInfo "Please see readme.txt for more details"
 
-Strict
+
 
 Import BRL.GLMax2D
 Import BRL.GLGraphics
