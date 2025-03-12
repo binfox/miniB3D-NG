@@ -79,14 +79,14 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/AmbientLight.htm">Online Help</a>
 End Rem
 Function AmbientLight(r#,g#,b#)
-	TGlobal.AmbientLight(r#,g#,b#)
+	TminiB3DGlobal.AmbientLight(r#,g#,b#)
 End Function
 
 Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/AntiAlias.htm">Online Help</a>
 End Rem
 Function AntiAlias(samples:Int)
-	TGlobal.AntiAlias(samples)
+	TminiB3DGlobal.AntiAlias(samples)
 End Function
 
 Rem
@@ -247,7 +247,7 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/ClearCollisions.htm">Online Help</a>
 End Rem
 Function ClearCollisions()
-	TGlobal.ClearCollisions()
+	TminiB3DGlobal.ClearCollisions()
 End Function
 
 Rem
@@ -268,7 +268,7 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/ClearWorld.htm">Online Help</a>
 End Rem
 Function ClearWorld(entities:Int=True,brushes:Int=True,textures:Int=True)
-	TGlobal.ClearWorld(entities,brushes,textures)
+	TminiB3DGlobal.ClearWorld(entities,brushes,textures)
 End Function
 
 Rem
@@ -282,7 +282,7 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/Collisions.htm">Online Help</a>
 End Rem
 Function Collisions(src_no:Int,dest_no:Int,method_no:Int,response_no:Int=0)
-	TGlobal.Collisions(src_no,dest_no,method_no,response_no)
+	TminiB3DGlobal.Collisions(src_no,dest_no,method_no,response_no)
 End Function
 	
 Rem
@@ -794,7 +794,7 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/Graphics3D.htm">Online Help</a>
 End Rem
 Function Graphics3D(width:Int,height:Int,depth:Int=0,mode:Int=0,rate:Int=60,flags:Int=-1) 'SMALLFIXES added flags
-	TGlobal.Graphics3D(width,height,depth,mode,rate,flags)
+	TminiB3DGlobal.Graphics3D(width,height,depth,mode,rate,flags)
 End Function
 
 Rem
@@ -1060,7 +1060,7 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/RenderWorld.htm">Online Help</a>
 End Rem
 Function RenderWorld()
-	TGlobal.RenderWorld()
+	TminiB3DGlobal.RenderWorld()
 End Function
 
 Rem
@@ -1277,7 +1277,7 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/UpdateWorld.htm">Online Help</a>
 End Rem
 Function UpdateWorld(anim_speed#=1.0)
-	TGlobal.UpdateWorld(anim_speed#)
+	TminiB3DGlobal.UpdateWorld(anim_speed#)
 End Function
 
 Rem
@@ -1417,7 +1417,7 @@ Rem
 bbdoc: <a href="https://kippykip.com/b3ddocs/commands/3d_commands/Wireframe.htm">Online Help</a>
 End Rem
 Function Wireframe(enable:Int)
-	TGlobal.Wireframe(enable)
+	TminiB3DGlobal.Wireframe(enable)
 End Function
 
 ' Blitz2D
