@@ -1515,7 +1515,7 @@ Function UpdateBones(ent:TEntity)
 	If TMesh(ent) <> Null
 		Local start_frame:Int = TMesh(ent).anim_seqs_first[TMesh(ent).anim_seq] 
 		Local end_frame:Int = TMesh(ent).anim_seqs_last[TMesh(ent).anim_seq] 
-		Local framef:Float = TMesh(ent).AnimTime
+		Local framef:Float = TMesh(ent).AnimTime#()
 		
 		If TMesh(ent).anim = False Then Return ' mesh contains no anim data
 
